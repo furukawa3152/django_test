@@ -1382,3 +1382,38 @@ html { font-size:80%}
 }
 
 /* ----- 参加者の声ここまで ----- */
+
+/* ----------雪を降らせる----------- */
+.snow-container {
+  position: relative;
+  width: 100%; /* ビューポートの幅に合わせる */
+  height: 100%; /* ビューポートの高さに合わせる */
+  overflow: hidden;
+  background-color: transparent; /* 背景を透明に */
+  z-index: 0; /* 他のコンテンツより上に配置 */
+  pointer-events: none; /* コンテンツのクリックを阻害しないように */
+}
+
+.snow {
+  background-color: #fff; /* 雪の色 */
+  border-radius: 50%; /* 雪を丸くする */
+  position: absolute;
+  animation: animate-snow 20s linear;
+}
+@keyframes animate-snow {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 300vh;
+  }
+}
+/* ----------雪を降らせるここまで----------- */
