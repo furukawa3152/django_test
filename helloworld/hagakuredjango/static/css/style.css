@@ -752,6 +752,27 @@ html { font-size:80%}
  
 }
 /* ------about_us ここまで----- */
+/* ------osusume ここから----- */
+.osusume{
+    display: flex; /* 横並びにする */
+}
+.osusume_left{
+    width: 50%;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    padding: 20px;
+}
+.osusume_right{
+    width: 50%;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    padding: 20px;
+}
+/* ------osusume ここまで----- */
+
+
+
+
 /* ------hagakureここから----- */
 .windy_contine_hagakureexp{
     position: relative; 
