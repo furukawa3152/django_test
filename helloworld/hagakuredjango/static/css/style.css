@@ -754,19 +754,101 @@ html { font-size:80%}
 /* ------about_us ここまで----- */
 /* ------osusume ここから----- */
 .osusume{
-    display: flex; /* 横並びにする */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 420px;
 }
 .osusume_left{
-    width: 50%;
-    box-sizing: border-box;
-    border: 1px solid #000;
-    padding: 20px;
+    max-width: 50%;
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: flex-end;
 }
+
+.osusume_left h1{
+    color:#625651;
+    font-weight: normal;
+    font-size:38px;
+    letter-spacing: 0.2em;
+}
+.marker {
+    display: inline-block;
+    background-image: linear-gradient(to top, #EAE086 50%, transparent 50%);
+    background-size: 100% 24px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+.osusume_left p{
+    color:#625651;
+    font-size: 1.2rem;
+    line-height: 1.9;
+    padding-top:15px;
+}
+
 .osusume_right{
-    width: 50%;
-    box-sizing: border-box;
-    border: 1px solid #000;
-    padding: 20px;
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.osusume_event_photo{
+    width: 450px;
+    border-radius: 4%;
+    margin-left: 10%;
+}
+@media (max-width: 1155px){
+    .osusume_event_photo{
+    width: 380px;
+}
+    .osusume_left p{
+    padding-top:8px;
+    line-height: 1.4;
+}
+}
+@media (max-width: 950px){
+    .osusume_left{
+        padding: 20px 0 10px 0;
+    }
+    .osusume_event_photo{
+    width: 360px;
+    margin-left: 10px;
+}
+    .osusume_left h1{
+        font-size:30px;
+    }
+    .osusume_text{
+        margin-left:0px;
+    }
+}
+@media (max-width: 830px){
+    .osusume_event_photo{
+    width: 345px;
+}
+}
+@media (max-width: 768px) {
+    .osusume {
+      flex-direction: column;
+      height:100%;
+    }
+    .osusume_left{
+      max-width: 80%;
+      justify-content: center;
+      padding:25px 0 8px 0;
+    }
+    .osusume_right{
+    max-width: 90%;
+    justify-content: center;
+}
+    .osusume_event_photo{
+        width: 450px;
+        margin-left: 0px;
+        margin-bottom:20px;
+    }
+}
+@media (max-width: 550px) {
+    .osusume_event_photo{
+        width: 90%;
+    }
 }
 /* ------osusume ここまで----- */
 
