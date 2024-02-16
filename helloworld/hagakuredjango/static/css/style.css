@@ -767,9 +767,9 @@ html { font-size:80%}
 }
 
 .osusume_left h1{
-    color:#625651;
+    color: #625651;
     font-weight: normal;
-    font-size:38px;
+    font-size: 38px;
     letter-spacing: 0.2em;
 }
 .marker {
@@ -780,10 +780,10 @@ html { font-size:80%}
     background-repeat: no-repeat;
   }
 .osusume_left p{
-    color:#625651;
+    color: #625651;
     font-size: 1.2rem;
     line-height: 1.9;
-    padding-top:15px;
+    padding-top: 15px;
 }
 
 .osusume_right{
@@ -798,11 +798,11 @@ html { font-size:80%}
 }
 @media (max-width: 1155px){
     .osusume_event_photo{
-    width: 380px;
+        width: 380px;
 }
     .osusume_left p{
-    padding-top:8px;
-    line-height: 1.4;
+        padding-top: 8px;
+        line-height: 1.4;
 }
 }
 @media (max-width: 950px){
@@ -810,11 +810,11 @@ html { font-size:80%}
         padding: 20px 0 10px 0;
     }
     .osusume_event_photo{
-    width: 360px;
-    margin-left: 10px;
+        width: 360px;
+        margin-left: 10px;
 }
     .osusume_left h1{
-        font-size:30px;
+        font-size: 30px;
     }
     .osusume_text{
         margin-left:0px;
@@ -822,22 +822,22 @@ html { font-size:80%}
 }
 @media (max-width: 830px){
     .osusume_event_photo{
-    width: 345px;
+        width: 345px;
 }
 }
 @media (max-width: 768px) {
     .osusume {
-      flex-direction: column;
-      height:100%;
+        flex-direction: column;
+        height:100%;
     }
     .osusume_left{
-      max-width: 80%;
-      justify-content: center;
-      padding:25px 0 8px 0;
+        max-width: 80%;
+        justify-content: center;
+        padding:25px 0 8px 0;
     }
     .osusume_right{
-    max-width: 90%;
-    justify-content: center;
+        max-width: 90%;
+        justify-content: center;
 }
     .osusume_event_photo{
         width: 450px;
