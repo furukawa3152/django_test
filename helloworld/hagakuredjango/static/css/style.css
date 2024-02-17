@@ -1167,7 +1167,108 @@ html { font-size:80%}
   }
 }
 /* ------SNSここまで---- */
+/* ------New dojo ここから----- */
+.dojo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 420px;
+}
+.dojo_right{
+    max-width: 50%;
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dojo_right h1{
+    color: #625651;
+    font-weight: normal;
+    font-size: 38px;
+    letter-spacing: 0.2em;
+}
+.marker {
+    display: inline-block;
+    background-image: linear-gradient(to top, #EAE086 50%, transparent 50%);
+    background-size: 100% 24px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+.dojo_right p{
+    color: #625651;
+    font-size: 1.2rem;
+    line-height: 1.9;
+    padding-top: 15px;
+}
+
+.dojo_left{
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.dojo_image{
+    width: 450px;
+    border-radius: 4%;
+    margin-right: 10%;
+}
+@media (max-width: 1155px){
+    .dojo_image{
+        width: 380px;
+}
+    .dojo_right p{
+        padding-top: 8px;
+        line-height: 1.4;
+}
+}
+@media (max-width: 950px){
+    .dojo_right{
+        padding: 20px 0 10px 0;
+    }
+    .dojo_image{
+        width: 360px;
+        margin-right: 10px;
+}
+    .dojo_right h1{
+        font-size: 30px;
+    }
+    .dojo_text{
+        margin-left:0px;
+    }
+}
+@media (max-width: 830px){
+    .dojo_image{
+        width: 345px;
+}
+}
+@media (max-width: 768px) {
+    .dojo {
+        flex-direction: column-reverse;
+        height:100%;
+    }
+    .dojo_right{
+        max-width: 80%;
+        justify-content: center;
+        padding:25px 0 8px 0;
+    }
+    .dojo_left{
+        max-width: 90%;
+        justify-content: center;
+}
+    .dojo_image{
+        width: 450px;
+        margin-right: 0px;
+        margin-bottom:20px;
+    }
+}
+@media (max-width: 550px) {
+    .dojo_image{
+        width: 90%;
+    }
+}
+/* ------New dojo ここまで----- */
+
 /* -----dojo ここから----- */
+/*
 .dojo h1 {
   font-size: 2.4rem;
   font-weight: normal;
@@ -1222,9 +1323,7 @@ html { font-size:80%}
   justify-content: center;
   align-items: center;
 }
-/* .description_dojo{
-    max-width: 432px;
-} */
+
 .top_icon_dojo {
   width: 20%;
   height: auto;
@@ -1236,8 +1335,10 @@ html { font-size:80%}
     width: 400px;
     border-radius: 10px;
 }
+*/
 /* 600px以下のサイズの場合のレイアウト
 ----------------------------------------------------*/
+/*
 @media (max-width: 600px) {
 
  .dojo {
@@ -1261,6 +1362,7 @@ html { font-size:80%}
   }
 
 }
+*/
 /* ------dojo ここまで----- */
 
 .dojo_makimono_group{
