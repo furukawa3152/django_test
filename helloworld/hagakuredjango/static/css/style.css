@@ -600,14 +600,25 @@ img {
 html { font-size:80%}
 
 .all_aboutus h1 {
-  font-size: 2.4rem;
-  font-weight: normal;
+    color: #625651;
+    font-weight: normal;
+    font-size: 38px;
+    letter-spacing: 0.2em;
+}
+.all_aboutus h2{
+    color: #625651;
+    font-size: 1.4rem;
+    line-height: 1.9;
+    padding-top: 15px;
+    text-align: center;
 }
 
 .all_aboutus p {
-  font-size: 1.2rem;
-  line-height: 1.7;
-  margin: 1.2rem 0px;
+    color: #625651;
+    font-size: 1.2rem;
+    line-height: 1.9;
+    padding-top: 5px;
+    text-align: center;
 }
 
 .all_aboutus img {
@@ -619,7 +630,7 @@ html { font-size:80%}
 }
 
 .all_aboutus div {
-  box-sizing: border-box;
+  box-sizing: bordr-box;
 }
 
 .all_aboutus {
@@ -640,17 +651,19 @@ html { font-size:80%}
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 90px 0px;
+  margin: 90px 0px 0px 0px;
 }
-
-.top_images_aboutus{
+.description_aboutus{
+  margin: 0px 25px;
+}
+.bottom_images_aboutus{
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
 }
 
-.top_images_aboutus .left_side_aboutus {
+.bottom_images_aboutus .left_side_aboutus {
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -658,7 +671,7 @@ html { font-size:80%}
   justify-content: flex-start;
 }
 
-.top_images_aboutus .right_side_aboutus {
+.bottom_images_aboutus .right_side_aboutus {
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -668,11 +681,9 @@ html { font-size:80%}
 
 
 .content_aboutus {
-  background-color: #ffffff;
   width: 100%;
   height: auto;
   padding: 5.5% 10%;
-  border-radius: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -682,7 +693,7 @@ html { font-size:80%}
 .castle_aboutus {
   width: 28%;
   height: auto;
-  margin: 0px auto 0px 15%;
+  margin: 0px auto 0px 10%;
   display: flex;
   align-items: flex-end;
 }
