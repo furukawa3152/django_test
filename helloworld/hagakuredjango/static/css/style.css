@@ -863,7 +863,130 @@ html { font-size:80%}
 }
 /* ------osusume ここまで----- */
 
+/* ------受講者の声（一部） ここから----- */
+.some_voices_container {
+    background-image: url(../images/background_image.jpg);
+    background-repeat: repeat;
+    background-size:  2200px auto;
+    height: auto;
+}
 
+.some_voices {
+    display:block;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+    padding-top:90px;
+    padding-bottom:90px;
+}
+
+.some_voices h1{
+    color: #625651;
+    font-weight: normal;
+    font-size: 2.4em;
+    letter-spacing: 0.2em;
+}
+
+.some_voices a{
+    color: #625651;
+    font-weight: normal;
+    font-size: 2.4em;
+    letter-spacing: 0.2em;
+}
+
+
+.some_voices_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px;
+}
+
+.some_voices_col{
+    width:500px;
+}
+
+.voice_index_frame {
+    display:inline-block;
+    position: relative;
+    border-radius:1rem;
+    background-color: #fff;
+    padding:2rem;
+    margin:5rem 2em 2em 5em;
+    width: 375px;
+    height:180px;
+    font-size: 1.2rem;
+    text-align:left;
+    justify-content: center;
+}
+
+.voice_index_frame p{
+    margin:1em;
+}
+
+@media screen and (max-width:768px) {
+    .some_voices_main {
+    flex-direction: column;
+    height:100%;
+    }
+
+    .voice_index_frame {
+        padding:2rem 2rem 1rem;
+        margin:5rem 2em 2em 5em;
+        width: 300px;
+        height: auto;
+    }
+}
+
+.person_index {
+    position:absolute;
+    border-radius: 50%;
+    background-color: rgb(239, 223, 201);
+    width: 80px;
+    height: 80px;
+    left: -55px;
+    top: -40px;
+    text-align: center;
+}
+
+.person_index:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 67px;
+    bottom: 3.2px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgb(239, 223, 201);
+    border-width: 6px 0 6px 12px;
+    transform: rotate(45deg);
+  }
+
+.persons {
+    width:70px;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+}
+
+.persons img{
+    width:100%;
+    height:auto;
+}
+
+.ninja {
+    width:65px;
+    position: absolute;
+    top: -1px;
+    left: 10px;
+}
+
+.ninja img{
+    width:100%;
+    height:auto;
+}
+
+/* ------受講者の声（一部） ここまで----- */
 
 
 /* ------hagakureここから----- */
