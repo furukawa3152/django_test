@@ -540,7 +540,7 @@ img {
 
 /*footer*/
 .footer{
-    background-color:#969696;
+    background-color:#625651;
     height:165px;
     position:relative;
 }
@@ -1057,7 +1057,7 @@ html { font-size:80%}
 .hagakure-summary_hagakureexp  {
     margin-top: px;
     margin-top: 20px;
-    max-width: 35%;
+    width: 400px;
     font-size:1.2rem;
     line-height: 1.7;
     margin-left: auto;
@@ -1157,9 +1157,12 @@ html { font-size:80%}
 /* ------SNSここから---- */
 
 .container_sns_makimono{
+  background-image: url(../images/new_background_image.jpg);
+  background-repeat: repeat;
+  background-size:  2200px auto;
   width: 100%;
   min-width: 375px;
-  height: 810px;
+  height: 1100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1176,7 +1179,14 @@ html { font-size:80%}
   justify-content: flex-end;
   position: relative;
 }
-
+.samurai_think_img {
+  position: absolute;
+  transform: rotate( -20deg );
+  right: 15%;
+  top: 240px;
+  width: auto;
+  height: 230px;
+}
 .cloud_makimono {
   position: absolute;
   right: 100px;
@@ -1193,7 +1203,10 @@ html { font-size:80%}
   position: absolute;
   bottom: -1px;
 }
-
+.background-image_makimono{
+  background-color: white;
+  border-radius: 10px;
+}
 
 .background-image_makimono-img_makimono{
   width: 100%;
@@ -1205,27 +1218,61 @@ html { font-size:80%}
 }
 
 .makimono_image_makimono{
+  width: 500px;
+  background-color: white;
   display: flex;
   justify-content: center;
   flex-direction: row;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.makimono_img{
+    width: 78px;
+    padding-top: 20px;
+}
+.sns_box_makimono h1{
+    color: #625651;
+    font-weight: normal;
+    font-size: 38px;
+    letter-spacing: 0.2em;
+}
+.sns_box_makimono{
+    background-color: white;
+    height: 600px;
+    display:block;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
-.makimono-img_makimono {
-  width: 120px;
+.fb-wrapper{
+  display: flex;
+  justify-content: center
 }
-
 
 .sns_part_makimono{
-   color: black;
-   font-size: 2.4rem;
-   font-weight: normal;
-   text-align: center;
-   max-width: 500px;
-   margin-bottom:15px;
+    margin-bottom:15px;
 }
 
 .facebook_narrow_makimono{
-  display: none;
+   display: none;
+}
+.hagakure_wrapper{
+    text-align: center;
+    margin-top: 55px;
+}
+.hagakure_wrapper h3{
+    color: #625651;
+    font-weight: normal;
+    font-size: 38px;
+    letter-spacing: 0.2em;
+}
+.hagakure_wrapper p{
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    line-height:30px;
 }
 
 @media(max-width:600px){
@@ -1247,6 +1294,14 @@ html { font-size:80%}
   align-items: flex-end;
   justify-content: flex-start;
   position: relative;
+}
+.samurai_inspi_img {
+  position: absolute;
+  transform: rotate( 10deg );
+  left: 20%;
+  top: 480px;
+  width: auto;
+  height: 230px;
 }
 .castle_makimono {
   width: auto;
@@ -1297,11 +1352,24 @@ html { font-size:80%}
         height: auto;
         margin: 0px 0px 0px 0px;
       }
-
+      .samurai_think_img {
+        position: absolute;
+        right: 10%;
+        top: 240px;
+        width: auto;
+        height: 16%;
+      }
+      .samurai_inspi_img {
+        position: absolute;
+        transform: rotate( 10deg );
+        left: 12%;
+        top: 480px;
+          height: 16%;
+      }
 }
 @media(max-width:840px){
   .container_sns_makimono {
-    height: 750px;
+    height: 1050px;
   }
   .background-image_makimono-img_makimono {
     padding-bottom: 80px;
@@ -1315,6 +1383,33 @@ html { font-size:80%}
   .castle_makimono {
     display: none;
   }
+  .samurai_think_img {
+    display: none;
+  }
+  .samurai_inspi_img {
+    display: none;
+  }
+}
+@media(max-width: 600px){
+    .container_sns_makimono {
+      height: 1150px;
+    }
+    .makimono_image_makimono{
+      max-width: 375px;
+    }
+    .hagakure_wrapper{
+      text-align: left;
+    }
+    .hagakure_wrapper h3{
+      margin-left: 5%;
+      max-width: 90%;
+    }
+      .hagakure_wrapper p{
+      font-size: 1.2rem;
+      margin: 0 auto;
+      max-width: 90%;
+  }
+
 }
 /* ------SNSここまで---- */
 /* ------New dojo ここから----- */
