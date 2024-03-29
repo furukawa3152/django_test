@@ -859,6 +859,9 @@ html { font-size:80%}
     .osusume_event_photo{
         width: 90%;
     }
+    .osusume_left h1{
+    letter-spacing: 0.1em;
+    }
 }
 /* ------osusume ここまで----- */
 
@@ -950,6 +953,10 @@ html { font-size:80%}
         width: 200px;
         height: auto;
         max-height: 270px;
+    }
+    .some_voices a{
+        font-size: 2.2em;
+        letter-spacing: 0.1em;
     }
 }
 
