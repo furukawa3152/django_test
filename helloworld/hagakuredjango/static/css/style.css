@@ -1511,6 +1511,36 @@ html { font-size:80%}
 }
 /* ------New dojo ここまで----- */
 
+/* 申込フォームボタンここから */
+.form_button {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  opacity: 0.70 ;
+  }
+.form_button img {
+  width: 120px;
+  height: auto;
+  }
+
+/* ボタンの基本スタイル */
+.form_button {
+  opacity: 0; /* 非表示 */
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+/* スクロールに応じて表示 */
+.form_button.active {
+  opacity: 1;
+  visibility: visible;
+}
+/* フッターに到達した時の位置調整 */
+.form_button.stop {
+  opacity: 0; /* 非表示 */
+  visibility: hidden;
+}
+/* 申込フォームボタンここまで */
+
 /* -----dojo ここから----- */
 /*
 .dojo h1 {
