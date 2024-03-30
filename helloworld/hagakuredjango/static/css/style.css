@@ -132,7 +132,7 @@ img {
     margin:auto;
 }
 /*navバー縮小時に塾生の声へのリンクのみ単独で表示*/
-.menu_container{
+/*.menu_container{
     position: relative;
 }
 .voice-link{
@@ -142,11 +142,11 @@ img {
 .voice-link {
     display: block;
     position: absolute;     /* spanを絶対位置指定に */
-    right: 60px;               /* 右側に固定 */
-    top: 8px;
-    text-decoration: none;  /* 下線を取り除く */
-    color: inherit;         /* 親要素と同じ色にする、もしくは他の色を指定する */
-}
+/*    right: 60px;               /* 右側に固定 */
+/*   top: 8px;
+/*    text-decoration: none;  /* 下線を取り除く */
+/*   color: inherit;         /* 親要素と同じ色にする、もしくは他の色を指定する */
+/*}
 .voice-link:visited{
     color: inherit;
 }
