@@ -872,7 +872,6 @@ html { font-size:80%}
 }
 
 .some_voices {
-    display:block;
     text-align:center;
     align-items: center;
     justify-content: center;
@@ -905,7 +904,7 @@ html { font-size:80%}
 }
 
 .some_voices_col{
-    width:50%;
+    max-width:50%;
 }
 
 .voice_index_frame {
@@ -913,17 +912,16 @@ html { font-size:80%}
     position: relative;
     border-radius:1rem;
     background-color: #fff;
-    padding:15px 5px 10px 15px;
+    padding:25px 20px 20px 25px;
     margin:30px 20px 20px 30px;
     width: 80%;
-    max-height:207px;
     font-size: 1.2rem;
     text-align:left;
     justify-content: center;
 }
 
 .voice_index_frame p{
-    margin:1em;
+    margin:0;
     line-height:1.7;
 }
 
@@ -942,16 +940,15 @@ html { font-size:80%}
     }
 
     .some_voices_col{
-    width:100%;
+    max-width:100%;
     }
 
     .voice_index_frame {
-        padding:20px 5px 10px 10px;
+        padding:35px 20px 25px 25px;
         margin:50px 0px 10px 10px;
         width: 200px;
-        height: auto;
-        max-height: 270px;
     }
+
     .some_voices a{
         font-size: 2.2em;
         letter-spacing: 0.1em;
@@ -965,7 +962,7 @@ html { font-size:80%}
     width: 80px;
     height: 80px;
     left: -55px;
-    top: -40px;
+    top: -45px;
     text-align: center;
 }
 
