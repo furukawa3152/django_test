@@ -759,7 +759,13 @@ html { font-size:80%}
   .content_aboutus {
     border-radius: 25px;
   }
- 
+  .all_aboutus h2{
+    text-align: left;
+  }
+
+  .all_aboutus p {
+    text-align: left
+  }
 }
 /* ------about_us ここまで----- */
 /* ------osusume ここから----- */
