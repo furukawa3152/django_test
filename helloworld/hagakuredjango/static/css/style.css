@@ -1501,6 +1501,12 @@ html { font-size:80%}
         justify-content: center;
         padding:25px 0 8px 0;
     }
+    .dojo_text{
+        text-align: center;
+　　 }
+    .dojo_text p{
+        text-align: left;
+　　 }
     .dojo_left{
         max-width: 90%;
         justify-content: center;
