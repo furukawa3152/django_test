@@ -849,6 +849,12 @@ html { font-size:80%}
         justify-content: center;
         padding:25px 0 8px 0;
     }
+    .osusume_text{
+        text-align:center;
+    }
+    .osusume_text p{
+    text-align:left;
+    }
     .osusume_right{
         max-width: 90%;
         justify-content: center;
