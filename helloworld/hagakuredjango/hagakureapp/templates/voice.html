@@ -32,6 +32,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v15.0"
     nonce="udzJmh8R"></script>
   <!--  OGP-->
+  <!-- トップ巻物 -->
+  <script src="{% static 'js/top_makimono.js' %}"></script>
 
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
     <meta property="og:url" content="https://hagakurepgm.net/voice">
@@ -400,6 +402,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
           </div>
       </div>
+      <!-- 申込フォームボタン -->
+      <div class="form_button">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc9WH1hvDtyB_pghy8NNrrLCVeGONm7o8ET2PF70KPZTel_jQ/viewform">
+        <img src="{% static 'images/form_button.png' %}" alt="申込ボタン">
+        </a>
+      </div>
+      <!-- 申込フォームボタンここまで -->
     </section>
     <footer>
     <div class="wrapper_hp footer">
