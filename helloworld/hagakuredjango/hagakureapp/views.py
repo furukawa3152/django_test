@@ -10,6 +10,9 @@ def index(request):
 def voice(request):
     return render(request, 'voice.html')
 
+# hagakure利用規約のページ
+def term_use(request):
+    return render(request, 'term_use.html')
 
 # transformersagaページ
 def saga_bot(request):
