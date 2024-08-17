@@ -1,6 +1,6 @@
 # app/urls.py
 from django.urls import path
-from .views import index, voice, saga_bot, trans_sagaben, indext5explain
+from .views import index, voice, saga_bot, trans_sagaben, indext5explain, term_use
 
 urlpatterns = [
     path('', index, name='index'),
@@ -9,4 +9,5 @@ urlpatterns = [
     path('saga_bot/', saga_bot, name='saga_bot'),
     path('trans_sagaben/', trans_sagaben, name='trans_sagaben'),
     path('indext5explain/', indext5explain, name='indext5explain'),
+    path('term_use/', term_use, name='term_use'),
 ]
