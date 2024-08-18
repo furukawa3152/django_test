@@ -82,20 +82,24 @@
           <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
+                    <!-- Django用にURL修正 -->
                     <a class="nav-link" aria-current="page" href="/">ホーム</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="voice">塾生の声</a>
+                    <a class="nav-link" href="{% url 'voice' %}">塾生の声</a>
                   </li>
                   <!-- Hagakure検定ページ追加 -->
                   <li class="nav-item">
-                    <a class="nav-link" href="saga_bot">佐賀弁bot</a>
+                    <a class="nav-link" href="{% url 'saga_bot' %}">佐賀弁bot</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="https://forms.gle/N8ipEt2RFSs8bt4a9">参加フォーム</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="https://www.facebook.com/102157125979726">FB</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'term_use' %}">規約</a>
                   </li>
               </ul>
             </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
+ <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
   <meta charset="UTF-8">
   <meta name="description" content="佐賀のプログラミングコミュニティ。HAGAKURE PROGRAMMING塾のWebページ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,7 +36,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- トップ巻物 -->
   <script src="{% static 'js/top_makimono.js' %}"></script>
 
-  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+
     <meta property="og:url" content="https://hagakurepgm.net/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="HAGAKURE_PROGRAMMING塾">
@@ -96,20 +96,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
+                    <!-- Django用にURL修正 -->
                     <a class="nav-link" aria-current="page" href="/">ホーム</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="voice">塾生の声</a>
+                    <a class="nav-link" href="{% url 'voice' %}">塾生の声</a>
                   </li>
                   <!-- Hagakure検定ページ追加 -->
                   <li class="nav-item">
-                    <a class="nav-link" href="saga_bot">佐賀弁bot</a>
+                    <a class="nav-link" href="{% url 'saga_bot' %}">佐賀弁bot</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="https://forms.gle/N8ipEt2RFSs8bt4a9">参加フォーム</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="https://www.facebook.com/102157125979726">FB</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'term_use' %}">規約</a>
                   </li>
               </ul>
             </div>
@@ -312,7 +316,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="flow_contents">
             <div class="contents_num">1</div>
             <dt>申し込み</dt>
-            <dd>申込フォームから必要事項を記入して申し込みます。</dd>
+            <dd>申込フォームから必要事項を記入して申し込みます。参加は無料です。</dd>
             <div class="contents_img">
               <img src="{% static 'images/Google_Forms_logo_(2014-2020) 1.png' %}" alt="">
             </div>
