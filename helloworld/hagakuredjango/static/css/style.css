@@ -2028,4 +2028,170 @@ html { font-size:80%}
 .first-screen.turn-page {
   animation: pageTurnAnimation 2.0s forwards;
 }
+
+/*----- 入塾の流れ -----*/
+.nyujuku {
+    padding-top: 20px;
+    background-color: #fff;
+}
+.container_nyujuku {
+    margin: 0 auto;
+    width: clamp(300px, 80vw, 1000px);
+}
+.nyujuku_ttl {
+    margin-top: 20px;
+    text-align: center;
+}
+.nyujuku_flow {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 30px calc(0.625rem + ((1vw - 3px) * 4));
+}
+.flow_contents {
+    background: #F4ECE9;
+    border: solid 2px #625651;
+    border-radius: 15px;
+    position: relative;
+}
+.contents_num{
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 35px;
+    height: 35px;
+    background: #625651;
+    border-radius: 30px;
+    color: #FFF;
+    font-size: 1.4rem;
+    display: grid;
+    place-items: center;
+}
+.flow_contents > dt {
+    margin-top: 20px;
+    font-family: "Mochiy Pop One", sans-serif;
+    font-size: calc(1.2rem + ((1vw - 3px) * 1.6));
+    text-align: center;
+}
+.flow_contents > dd {
+    padding: 10px;
+    /*font-size: calc(1rem + ((1vw - 3px) * 1.8));*/
+    font-size: 1.2rem;
+}
+.contents_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contents_img > img {
+    max-width: 80px;
+    height: auto;
+    object-fit: cover;
+}
+@media (width > 800px){
+    .nyujuku_ttl {
+        font-size: 30px;
+    }
+    .nyujuku_flow {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .flow_contents > dt {
+        font-size: 22px;
+    }
+}
+/*----- 入塾の流れ ここまで -----*/
 /* 最初の画面ここまで */
+
+/*----------------------------------------------------
+ 利用規約ページ
+----------------------------------------------------*/
+/*----- 背景 -----*/
+.term {
+    background-image: url(../images/bg/top1.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+/*----- 背景の余白 -----*/
+.term_use {
+    padding: 1em;
+}
+/*----- 白枠内部の設定 -----*/
+.term_use_container {
+    margin: 2em auto;
+    padding: 1em 20px 1.6em;
+    width: clamp(300px, 75vw, 1000px);
+    background-color: rgba(255,255,255, 0.85);
+    border-radius: 20px;
+    font-family: "M PLUS 1p", 'メイリオ', 'ヒラギノ角ゴシック', 'MSゴシック',sans-serif;
+}
+/*----- メインタイトル -----*/
+.term_main_ttl {
+    margin-top: 1em;
+    padding-bottom: 1em;
+    /*padding: .5em;*/
+    font-size: clamp(17px, 3.2vw, 36px);
+    font-weight: 600;
+    color: #4C4C4C;
+    letter-spacing: 0.3em;
+    text-align: center;
+}
+/*----- 最初のコンテンツ以外の設定 -----*/
+.term_contents:not(:first-of-type) {
+    margin-top: 2em;
+}
+/*----- コンテンツ内部の設定 -----*/
+.term_contents > * {
+    color: #625651;
+    line-height: 1.6;
+}
+/*----- コンテンツのタイトル -----*/
+.term_contents_ttl {
+    border: solid 2px #625651;
+    padding: 3px 8px;
+    font-size: clamp(16px, 1.6vw, 18px);
+    font-weight: 600;
+    position: relative;
+}
+.term_contents_ttl::after {
+    position: absolute;
+    content: "";
+    inset: 3px -5px -5px 3px;
+    background: rgba(241,199,202,0.3);
+}
+
+.term_contents_ttl + * {
+    margin-top: 1.2em;
+}
+
+.term_contents > p,
+.term_contents > ul > li {
+    /* margin: 0; */
+    margin-bottom: 0;
+    font-size: clamp(14px, 1.5vw, 16px);
+}
+.term_contents > ul > li::marker {
+    content: "・"
+}
+.term_contents > ul {
+    padding-left: 1rem;
+}
+/*----- 画面サイズが600px以上のとき -----*/
+@media screen and (min-width:600px) {
+    /*----- 白枠内部の余白を変更 -----*/
+    .term_use_container {
+        margin: 5vh auto;
+        padding: 1em 60px 2.8em;
+    }
+
+    .term_main_ttl {
+        padding: 1em;
+    }
+    .term_contents_ttl {
+        display: inline-block;
+    }
+}
+/*----------------------------------------------------
+ 利用規約ページ　ここまで
+----------------------------------------------------*/
