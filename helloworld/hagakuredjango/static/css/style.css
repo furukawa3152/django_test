@@ -2039,8 +2039,17 @@ html { font-size:80%}
     width: clamp(300px, 80vw, 1000px);
 }
 .nyujuku_ttl {
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     text-align: center;
+    color: #625651;
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    background-image: linear-gradient(to top, #EAE086 50%, transparent 50%);
+    background-size: 80% 24px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
 .nyujuku_flow {
     margin-top: 20px;
@@ -2092,6 +2101,7 @@ html { font-size:80%}
 @media (width > 800px){
     .nyujuku_ttl {
         font-size: 30px;
+        background-size: 30% 24px;
     }
     .nyujuku_flow {
         grid-template-columns: repeat(4, 1fr);
