@@ -4,29 +4,35 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
     {% load static %}
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WLK68MXV');</script>
-    <!-- End Google Tag Manager -->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQMQ82P18K"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-PQMQ82P18K');
-    </script>
-        <title></title>
-        <style>
-      body {
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WLK68MXV');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PQMQ82P18K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PQMQ82P18K');
+</script>
+    <title></title>  
+    <style>
+      html,body {
         font-family: 'Roboto', sans-serif;
+        background-color: #efeded;
+        height: 100%;
         margin: 0;
         padding: 0;
-        background-color: #efeded;
       }
       #message-container {
         width: 80%;
@@ -173,6 +179,7 @@
       .container {
         text-align: center;
         margin-top: 1rem;
+        /* margin-bottom: 60px; */
       }
       a {
         color: #3f51b5;
@@ -181,9 +188,54 @@
       a:hover {
         text-decoration: underline;
       }
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
     </style>
   </head>
+  
   <body>
+    <header class="wrapper_hp">
+      <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container-fluid">
+          <!-- Django用にURL修正 -->
+          <a class="navbar-brand" href="/">
+            <img src="{% static 'images/logo.png' %}" alt="hagakure_logo" width="30">
+          </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <!-- Django用にURL修正 -->
+                  <a class="nav-link" aria-current="page" href="/">ホーム</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'voice' %}">塾生の声</a>
+                </li>
+                <!-- Hagakure検定ページ追加 -->
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'saga_bot' %}">佐賀弁bot</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://forms.gle/N8ipEt2RFSs8bt4a9">参加フォーム</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.facebook.com/102157125979726">FB</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'term_use' %}">参加規約</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
     <div id="message-container">
       <h1>Transformer SAGA</h1>
       <div id="message-box">
@@ -206,6 +258,13 @@
     <div class="container">
       <a href="{% url 'indext5explain' %}">モデルの説明</a>
     </div>
+    <footer>
+      <div class="wrapper_hp footer">
+        <div class="footer_border"></div>
+        <p><small>&copy;HAGAKURE PROGRAMMING塾 since2022</small></p>
+        <img class="footer_logo" src="{% static 'images/footer_logo.png' %}" alt="samurai_and_ninja">
+      </div>
+    </footer>
     
     <script>
       const user_message = "{{ user_message }}";
